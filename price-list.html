@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/drop-down-menu.js"></script>
+    <script src="js/scrollup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="burger" id="menuToggle" onclick="dropdownMenuToggle()">
+                <input type="checkbox" id='toggleCheckBox'/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id='dropDownMenu'>
+                <li><a href="index-item.html">ГЛАВНАЯ</a></li>
+                <li><a href="index-news.html">НОВОСТИ</a></li>
+                <li><a href="index-price.html">ПРАЙС-ЛИСТ</a></li>
+                <li><a href="index-shop.html">МАГАЗИН</a></li>
+                <li><a data-toggle="modal" data-target="#registerModal">ЗАПИСАТЬСЯ</a></li>
+                <li>
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <img class="door-icon" src="images/enter.png">
+                        <span>ВХОД</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-section">
+        <div class="container-main">
+            <div class="title-price">
+                <img class="small-rhomb" src="images/rhomb1.png">
+                ПРАЙС-ЛИСТ
+                <img class="small-rhomb" src="images/rhomb1.png">
+            </div>
+            <h1>
+                <img src="images/black-line.png" class="black-line">
+                <img style="height: 26px; width: 26px;" src="images/rhomb1.png">
+                ИСТИННО МУЖСКАЯ КЛАССИКА
+                <img style="height: 26px; width: 26px;" src="images/rhomb1.png">
+                <img src="images/black-line.png" class="black-line">
+            </h1>
+            <div class="product-container">
+                <div class="product-colomn">
+                    <h3>МИ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
+                    <ul class="price-colomn">
+                        <li><img class="small-rhomb" src="images/rhomb1.png"> BAXTER OF CALIFORNIA</li>
+                        <li><img class="small-rhomb" src="images/rhomb1.png"> MR NATTY</li>
+                        <li><img class="small-rhomb" src="images/rhomb1.png"> SUAVECITO</li>
+                        <li><img class="small-rhomb" src="images/rhomb1.png"> MALIN+GOETZ</li>
+                    </ul>
+                    <h3>НЕСКОЛЬКО СЛОВ О НАС</h3>
+                    <div class="price-text">
+                        НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ СТРИЖКАМИ.
+                        СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ И ПРОДУМАННАЯ
+                        ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО.
+                        <br>
+                    </div>
+                </div>
+                <div class="product-colomn">
+                    <h3>ЦЕНЫ НА НАШИ УСЛУГИ</h3>
+                    <table class="price-table">
+                        <tr>
+                            <td>СТРИЖКА</td>
+                            <td>1 500 РУБ.</td>
+                        </tr>
+                        <tr>
+                            <td>СТРИЖКА БОРОДЫ</td>
+                            <td>1 000 РУБ.</td>
+                        </tr>
+                        <tr>
+                            <td>НАКРУТКА УСОВ</td>
+                            <td>450 ХУЙ.</td>
+                        </tr>
+                    </table>
+                    <button class="width-100 margin-bt-15">ЗАПИСЬ</button>
+                    <div class="price-text">
+                        НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА,
+                        ПОЭТОМУ СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ,
+                        ДАЖЕ В ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТЬСЯ В УДОБНУЮ ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ
+                        СЕБЯ КОМФОРТНО И СВОБОДНО!
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--=======footer================================= -->
+    <footer id="footer">
+        <div class="container-footer">
+            <div class="contacts-footer footer-colomn">
+                <p class="news-text">
+                    БАРБЕРШОП «БОРОДИНСКИЙ»
+                    <br>
+                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+                    <br>
+                    <br>
+                    <a class="map" data-toggle="modal" data-target="#mapModal">КАК НАС НАЙТИ?</a>
+                </p>
+            </div>
+            <div class="social-networks-icon footer-colomn">
+                <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
+                <div class="container-networks-icon">
+                    <a href="http://vk.com">
+                        <img class="networks-icon" src=images/vk-icon.png> </a> <a href="http://vk.com">
+                        <img class="networks-icon" src=images/fb-icon.png> </a> <a href="http://vk.com">
+                        <img class="networks-icon" src=images/inst-icon.png> </a> </div> </div> </div> </footer> 
+                            
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6208320190349!2d30.34459221583079!3d59.93843366907748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a09a871df7%3A0x44f2672b536ea3ac!2z0YPQuy4g0JHQtdC70LjQvdGB0LrQvtCz0L4sIDYsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRltGPLCAxOTEwMjg!5e0!3m2!1suk!2sua!4v1541261818545" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-register" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-white" style="margin-top:0px;">
+                        <div class="container-register colomn">
+                            <h3>ЗАПИСАТЬСЯ</h3>
+                            <div class="content">
+                                <p class='news-text'>
+                                    УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
+                                    С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ
+                                    <br>
+                                </p>
+                                <div>
+                                    <input class="input-forms w-input" data-name="date" id="date" name="date" placeholder="Дата"
+                                        type="text">
+                                    <input class="input-forms w-input" data-name="date" id="date" name="date" placeholder="Дата"
+                                        type="text" style="float:right">
+                                </div>
+                                <div>
+                                    <input class="input-forms w-input" data-name="time" id="time" name="time" placeholder="Время"
+                                        type="text">
+                                    <input class="input-forms w-input" data-name="phone" id="phone" name="phone"
+                                        placeholder="Телефон" type="text" style="float:right">
+                                </div>
+                            </div>
+                            <button class="width-100">ОТПРАВИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-register" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="container-white" style="margin-top:0px;">
+                        <div class="container-register">
+                            <h3>ВХОД В ЛИЧНЫЙ КАБИНЕТ</h3>
+                            <p class='news-text'>
+                                    ВВЕДИТЕ ЛОГИН И ПАРОЛЬ ДЛЯ ВХОДА В ВАШ КАБИНЕТ ПОЛЬЗОВАТЕЛЯ:
+                                <br>
+                            </p>
+                            <input class="login-forms login-icon" data-name="login" id="login" maxlength="256" name="login" required="required"
+                                type="text" placeholder="Введите логин">
+                            <input class="login-forms password-icon" data-name="login" id="login" maxlength="256" name="login" required="required"
+                                type="text" placeholder="Введите пароль">
+                            <div class="login-row margin-bt-top-10">
+                                <div>
+                                    <input type="checkbox">
+                                    <label class="filter-parametr"> ЗАПОМНИТЬ МЕНЯ </label>
+                                </div>
+                                <div style="float:right">
+                                    <a class="fild-login">Я ЗАБЫЛ ПАРОЛЬ</a>
+                                </div>
+                            </div>
+                            <button class="width-100">ВОЙТИ</button>
+                            <div class="registration margin-bt-top-10">
+                                <a class="fild-login">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
